@@ -55,7 +55,12 @@
 
 ## 下载与安装
 
-发布后可在 [Releases](../../releases) 下载 `midea-cloud-control-<版本>-setup.exe`, 运行后按向导安装, 可自选安装路径. 暂未发布时, 请按下一节从源码打包.
+前往 [Releases](../../releases/latest) 下载:
+
+- `midea-cloud-control-<版本>-setup.exe`: 安装程序, 按向导安装, 可自选安装路径.
+- `midea-cloud-control-<版本>-win-portable.zip`: 便携版, 解压后运行 `midea-cloud-control.exe`.
+
+安装包未做代码签名, 首次运行时 Windows SmartScreen 可能提示 "未知发布者", 选择 "仍要运行" 即可.
 
 > 主要面向 Windows. macOS 与 Linux 可自行从源码构建, 未经测试.
 
