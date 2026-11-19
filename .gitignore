@@ -1,0 +1,425 @@
+# Node.js 依赖安装目录
+node_modules
+
+# 构建或打包输出目录 (electron-builder 默认输出位置)
+dist
+
+# electron-vite 编译输出目录
+out
+
+# macOS Finder 生成的目录属性文件
+.DS_Store
+
+# ESLint 缓存文件
+.eslintcache
+
+# 各类日志文件 (含轮转后缀)
+*.log*
+
+# 日志目录
+logs
+
+# 日志文件
+*.log
+
+# npm 调试日志
+npm-debug.log*
+
+# Yarn 调试日志
+yarn-debug.log*
+
+# Yarn 错误日志
+yarn-error.log*
+
+# Lerna 调试日志
+lerna-debug.log*
+
+# Node.js 诊断报告
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# 进程 ID 记录目录
+pids
+
+# 进程 ID 文件
+*.pid
+
+# 随机种子文件
+*.seed
+
+# 进程 ID 锁文件
+*.pid.lock
+
+# jscoverage/JSCover 插桩后的代码目录
+lib-cov
+
+# 测试覆盖率报告目录
+coverage
+
+# lcov 覆盖率数据文件
+*.lcov
+
+# nyc 覆盖率工具的中间数据
+.nyc_output
+
+# Grunt 中间存储目录
+.grunt
+
+# Bower 依赖目录
+bower_components
+
+# node-waf 配置锁文件
+.lock-wscript
+
+# node-gyp 编译生成的原生插件
+build/Release
+
+# jspm 依赖目录
+jspm_packages/
+
+# Snowpack 依赖目录
+web_modules/
+
+# TypeScript 增量编译缓存
+*.tsbuildinfo
+
+# npm 缓存目录
+.npm
+
+# Stylelint 缓存文件
+.stylelintcache
+
+# Node.js REPL 历史记录
+.node_repl_history
+
+# npm pack 生成的包文件
+*.tgz
+
+# Yarn 完整性校验文件
+.yarn-integrity
+
+# 本地环境变量文件, 可能包含密钥
+.env
+
+# 按环境区分的本地环境变量文件, 可能包含密钥
+.env.*
+
+# 保留环境变量示例文件, 供他人参考配置项
+!.env.example
+
+# 各类工具的缓存文件
+.cache
+
+# Parcel 缓存目录
+.parcel-cache
+
+# Next.js 构建输出目录
+.next
+
+# Nuxt.js 构建输出目录
+.nuxt
+
+# Nuxt 3 / Nitro 构建输出目录
+.output
+
+# Nitro 中间文件目录
+.nitro/
+
+# 各类工具的缓存目录
+.cache/
+
+# VuePress 构建输出目录
+.vuepress/dist
+
+# VuePress v2 临时目录
+.temp
+
+# SvelteKit 构建输出目录
+.svelte-kit/
+
+# VitePress 构建输出目录
+**/.vitepress/dist
+
+# VitePress 缓存目录
+**/.vitepress/cache
+
+# Docusaurus 缓存与生成文件
+.docusaurus
+
+# Serverless 框架目录
+.serverless/
+
+# FuseBox 缓存目录
+.fusebox/
+
+# DynamoDB Local 数据文件
+.dynamodb/
+
+# Firebase 缓存目录
+.firebase/
+
+# TernJS 端口文件
+.tern-port
+
+# VS Code 扩展测试下载的 VS Code 副本
+.vscode-test
+
+# pnpm 本地存储目录
+.pnpm-store
+
+# Yarn PnP 生成的文件
+.pnp.*
+
+# Yarn v2+ 目录内容
+.yarn/*
+
+# 保留 Yarn 补丁目录
+!.yarn/patches
+
+# 保留 Yarn 插件目录
+!.yarn/plugins
+
+# 保留 Yarn 发行版目录
+!.yarn/releases
+
+# 保留 Yarn SDK 目录
+!.yarn/sdks
+
+# 保留 Yarn 版本目录
+!.yarn/versions
+
+# Vite 加载 JS 配置时生成的临时文件
+vite.config.js.timestamp-*
+
+# Vite 加载 TS 配置时生成的临时文件
+vite.config.ts.timestamp-*
+
+# Vite 缓存目录
+.vite/
+
+# Astro 缓存目录
+.astro/
+
+# Turborepo 缓存目录
+.turbo
+
+# Nx 缓存目录
+.nx/cache
+
+# Nx 工作区数据目录
+.nx/workspace-data
+
+# Nx 迁移运行记录目录
+.nx/migrate-runs
+
+# VS Code 工作区配置目录, 默认忽略
+.vscode/*
+
+# 保留共享的 VS Code 编辑器设置
+!.vscode/settings.json
+
+# 保留共享的 VS Code 任务配置
+!.vscode/tasks.json
+
+# 保留共享的 VS Code 调试配置
+!.vscode/launch.json
+
+# 保留共享的 VS Code 推荐扩展列表
+!.vscode/extensions.json
+
+# 保留共享的 VS Code 代码片段
+!.vscode/*.code-snippets
+
+# 保留 VS Code 多根工作区文件
+!*.code-workspace
+
+# VS Code 扩展打包文件
+*.vsix
+
+# Windows 缩略图缓存
+Thumbs.db
+
+# Windows 加密的缩略图缓存
+Thumbs.db:encryptable
+
+# Windows 缩略图缓存 (旧版)
+ehthumbs.db
+
+# Windows Vista 缩略图缓存
+ehthumbs_vista.db
+
+# Windows 上进程崩溃生成的转储文件
+*.stackdump
+
+# Windows 文件夹显示配置
+[Dd]esktop.ini
+
+# Windows 回收站目录
+$RECYCLE.BIN/
+
+# Windows Installer CAB 包
+*.cab
+
+# Windows Installer 安装包
+*.msi
+
+# Windows MSIX 安装包
+*.msix
+
+# Windows Installer 合并模块
+*.msm
+
+# Windows Installer 补丁包
+*.msp
+
+# Windows 快捷方式
+*.lnk
+
+# macOS 本地化文件夹名标记
+.localized
+
+# macOS 归档解压生成的元数据目录
+__MACOSX/
+
+# macOS 资源分支数据目录
+.AppleDouble
+
+# macOS 应用启动服务覆盖配置
+.LSOverride
+
+# macOS 自定义文件夹图标文件 (文件名以回车符结尾)
+Icon[]
+
+# macOS 资源分支的 AppleDouble 文件
+._*
+
+# macOS 文档版本存储目录
+.DocumentRevisions-V100
+
+# macOS 文件系统事件日志目录
+.fseventsd
+
+# macOS Spotlight 索引目录
+.Spotlight-V100
+
+# macOS 临时文件目录
+.TemporaryItems
+
+# macOS 卷上的废纸篓目录
+.Trashes
+
+# macOS 卷自定义图标
+.VolumeIcon.icns
+
+# macOS Time Machine 排除标记
+.com.apple.timemachine.donotpresent
+
+# macOS Time Machine 支持标记
+.com.apple.timemachine.supported
+
+# macOS 安装器沙盒目录
+.PKInstallSandboxManager
+
+# macOS 系统软件安装器沙盒目录
+.PKInstallSandboxManager-SystemSoftware
+
+# macOS 热文件追踪数据
+.hotfiles.btree
+
+# macOS 卷 ID 访问目录
+.vol
+
+# macOS 文件 ID 访问目录
+.file
+
+# macOS 磁盘标签文件
+.disk_label*
+
+# 文件系统检查恢复的文件目录
+lost+found
+
+# macOS HFS+ 私有数据目录 (名称以回车符结尾)
+.HFS+ Private Directory Data[]
+
+# AFP 共享卷的 Apple 数据库文件
+.AppleDB
+
+# AFP 共享卷的桌面数据库目录
+.AppleDesktop
+
+# AFP 网络废纸篓目录
+Network Trash Folder
+
+# macOS 临时项目目录
+Temporary Items
+
+# AFP 共享卷的元数据文件
+.apdisk
+
+# 经典 Mac OS 桌面数据库
+Desktop DB
+
+# 经典 Mac OS 桌面数据库
+Desktop DF
+
+# 经典 Mac OS 内容查找目录
+TheFindByContentFolder
+
+# 经典 Mac OS 卷设置目录
+TheVolumeSettingsFolder
+
+# 经典 Mac OS 内容查找索引
+.FBCIndex
+
+# 经典 Mac OS 内容查找信号量文件
+.FBCSemaphoreFile
+
+# 经典 Mac OS 内容查找锁目录
+.FBCLockFolder
+
+# 磁盘配额数据 (组)
+.quota.group
+
+# 磁盘配额数据 (用户)
+.quota.user
+
+# 磁盘配额操作数据 (组)
+.quota.ops.group
+
+# 磁盘配额操作数据 (用户)
+.quota.ops.user
+
+# Time Machine 备份数据库目录
+Backups.backupdb
+
+# Time Machine 本地快照目录
+.MobileBackups
+
+# Time Machine 本地快照废纸篓
+.MobileBackups.trash
+
+# Time Machine 本地快照废纸篓
+MobileBackups.trash
+
+# Time Machine 启动选择器文件
+tmbootpicker.efi
+
+# 编辑器生成的备份文件
+*~
+
+# FUSE 文件系统删除仍被占用文件时生成的临时文件
+.fuse_hidden*
+
+# KDE 文件夹属性文件
+.directory
+
+# Linux 可移动设备上的废纸篓目录
+.Trash-*
+
+# NFS 删除仍被占用文件时生成的临时文件
+.nfs*
+
+# nohup 命令的输出文件
+nohup.out
+
+# Claude Code 的本地个人设置
+.claude/settings.local.json

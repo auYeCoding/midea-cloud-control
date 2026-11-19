@@ -1,0 +1,117 @@
+/**
+ * 样式总入口: 引入 Tailwind 与 shadcn/ui 基础样式, 汇总三层 token, 并把语义 token 映射为 Tailwind 工具类.
+ */
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+@import './tokens.primitives.css';
+@import './tokens.semantic.css';
+@import './tokens.components.css';
+
+@custom-variant dark (&:is(.dark *));
+
+/**
+ * 矮窗口变体: 窗口高度不超过 640px 时生效, 用于在小窗口下收紧控件尺寸, 使设置页不滚动.
+ */
+@custom-variant short (@media (max-height: 640px));
+
+/**
+ * 清空 Tailwind 默认调色板, 使颜色类只能来自下方映射的语义 token.
+ */
+@theme {
+  --color-*: initial;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-emphasis: var(--emphasis);
+  --color-emphasis-muted: var(--emphasis-muted);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+  --text-device-temperature: var(--device-card-temperature-size);
+}
+
+/**
+ * 把元素声明为宽高两个方向的尺寸容器, 使后代可以用 cqmin 等单位随元素尺寸缩放.
+ * 只用于尺寸由外部 (如网格) 决定, 不依赖内容撑开的元素.
+ */
+@utility container-size {
+  container-type: size;
+}
+
+/**
+ * 无边框窗口的拖动区域: 标记为可拖动的元素用于移动窗口, 双击可最大化.
+ */
+@utility app-region-drag {
+  -webkit-app-region: drag;
+  app-region: drag;
+}
+
+/**
+ * 拖动区域内的可交互元素必须排除在拖动之外, 否则无法接收点击.
+ */
+@utility app-region-no-drag {
+  -webkit-app-region: no-drag;
+  app-region: no-drag;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+
+  /**
+   * 切换明暗主题的瞬间禁用全部过渡, 避免颜色从旧主题渐变到新主题造成闪烁.
+   */
+  .theme-switching,
+  .theme-switching *,
+  .theme-switching *::before,
+  .theme-switching *::after {
+    transition: none !important;
+  }
+}

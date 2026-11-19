@@ -1,0 +1,37 @@
+{
+  "version": "1",
+  "frontendRoot": "src/renderer/src",
+  "alias": {
+    "@renderer": "src/renderer/src"
+  },
+  "zones": {
+    "app": "src/renderer/src/app",
+    "features": "src/renderer/src/features",
+    "components": "src/renderer/src/components",
+    "ui": "src/renderer/src/components/ui",
+    "hooks": "src/renderer/src/hooks",
+    "lib": "src/renderer/src/lib",
+    "styles": "src/renderer/src/styles",
+    "locales": "src/renderer/src/locales",
+    "types": "src/renderer/src/types"
+  },
+  "offLimits": ["src/main", "src/preload"],
+  "stack": {
+    "framework": "react",
+    "runtime": "electron-renderer",
+    "uiLib": "shadcn/ui (radix)",
+    "styling": "tailwind v4",
+    "i18nLib": "react-i18next + i18next-icu",
+    "themeStrategy": "css-variables + .dark class, follow system by default",
+    "router": "react-router (hash)",
+    "storybook": false
+  },
+  "tokenLayers": {
+    "primitivesFile": "src/renderer/src/styles/tokens.primitives.css",
+    "semanticFile": "src/renderer/src/styles/tokens.semantic.css",
+    "componentsFile": "src/renderer/src/styles/tokens.components.css",
+    "tailwindEntry": "src/renderer/src/styles/theme.css"
+  },
+  "packageManager": "npm",
+  "devCommand": "npm run dev"
+}
